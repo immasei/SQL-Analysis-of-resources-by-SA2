@@ -20,19 +20,28 @@ Using 350+ SA2s within Greater Sydney area, we will spatially intergrating sever
 
 ### Cleaning data with Python
 The common process is dealing with NaNs, dropping unnecessary rows, columns, and checking data types. We always drop NaN rows in columns like longitude, latitude or geometry. For data sets with longitude and latitude, create new geom column from that. For spatial data sets with geometry column (polygon), convert to new geom column (multi-polygon). We also identify primary columns by comparing the total rows to the total number of unique values that each column holds. If it’s equal, then it’s the primary column.
-> income 	  -Replace NaN (“np”) in numerical columns with 0. Because NaN income has same 
-             meaning as $0. After that, we convert all these columns to type int64. 
+> income 	-Replace NaN (“np”) in numerical columns with 0. Because NaN income has same 
+  		 meaning as $0. After that, we convert all these columns to type int64.
+
 > polling 	-Dropped 140 rows that has NaN in both longitude, latitude, the_geom
+
 > business	-No NaN in the whole dataset and have correct data types.
-> population-No NaN in the whole dataset and have correct data types.
+
+> population    -No NaN in the whole dataset and have correct data types.
+
 > stops 	  -No NaN in important columns: longitude, latitude
+
 > catchment	_future -Convert numerical year into Y or N so it’s the same as other 2 catchment
-	          _secondary & _primary -Drop column PRIORITY so it’s same as catchment_future.
-> sa2.shp  	-Filter to “Greater Sydney”. Drop NaN in geometry. Keep: SA2_CODE21, SA2_NAME21,                 AREASQKM21, geom. Convert SA2_CODE21 to int so it matches sa2_code in other data
-> toilet    -No NaN in columns: longitude, latitude.
-> crime	    -No NaN in the whole dataset
+	        _secondary & _primary -Drop column PRIORITY so it’s same as catchment_future.
+> 
+> sa2.shp  	-Filter to “Greater Sydney”. Drop NaN in geometry. Keep: SA2_CODE21, SA2_NAME21, AREASQKM21, geom. Convert SA2_CODE21 to int so it matches sa2_code in other data
+
+> toilet    	-No NaN in columns: longitude, latitude.
+
+> crime	    	-No NaN in the whole dataset
+
 > employees	-Drop NaN (“w”) row in important column: sa2_code and convert to int64. 
-            -In numerical columns, replace NaN with 0 and convert to type int64
+            	-In numerical columns, replace NaN with 0 and convert to type int64
 
 ### Indexes
 We create index either on geom or sa2_code.
