@@ -6,23 +6,17 @@ Australia is formally defined by more than 2000 ”Statistical Area Level 2” (
 Using 350+ SA2s within Greater Sydney area, we will spatially intergrating several datasets to calculate wel-resourced score of each region.
 
 ### Dataset 
-| Dataset  | Type  | Source                          	| About    				|
-| :------: | :---: | :--------------------------------: | :-----------------------------------: | 
-| income   | csv   | Australia Bureau of Statistics  	| personal income 			|
-| polling  | csv   | Australian Electoral Commission    | federal election polling locations	|
-| business | csv   | Australia Bureau of Statistics     | turnover size				|
-
-stops     txt   Transport for NSW                        public transport stops
-
-catchment shp   NSW Department of Education              school
-
-sa2       shp   Australia Bureau of Statistics           statistical area level 2
-
-toilet    json  Department of Health                     public toilet
-
-crime     shp   Bureau of Crime Statistics and Research  domestic assault
-
-employees csv   Australia Bureau of Statistics           employee size 
+| Dataset   | Type  | Source                          	      | About    				|
+| :-------: | :---: | :-------------------------------------: | :-------------------------------------: | 
+| income    | csv   | Australia Bureau of Statistics  	      | personal income 			|
+| polling   | csv   | Australian Electoral Commission         | federal election polling locations	|
+| business  | csv   | Australia Bureau of Statistics          | turnover size				|
+| stops     | txt   | Transport for NSW                       | public transport stops			|
+| catchment | shp   | NSW Department of Education             | school					|
+| sa2       | shp   | Australia Bureau of Statistics          | statistical area level 2		|
+| toilet    | json  | Department of Health                    | public toilet				|
+| crime     | shp   | Bureau of Crime Statistics and Research | domestic assault			|
+| employees | csv   | Australia Bureau of Statistics          | employee size 				|
 
 ### Cleaning data with Python
 The common process is dealing with NaNs, dropping unnecessary rows, columns, and checking data types. We always drop NaN rows in columns like longitude, latitude or geometry. For data sets with longitude and latitude, create new geom column from that. For spatial data sets with geometry column (polygon), convert to new geom column (multi-polygon). We also identify primary columns by comparing the total rows to the total number of unique values that each column holds. If it’s equal, then it’s the primary column.
