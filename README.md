@@ -20,6 +20,8 @@ Using 350+ SA2s within Greater Sydney area, we will spatially intergrating sever
 
 ### Cleaning data with Python
 The common process is dealing with NaNs, dropping unnecessary rows, columns, and checking data types. We always drop NaN rows in columns like longitude, latitude or geometry. For data sets with longitude and latitude, create new geom column from that. For spatial data sets with geometry column (polygon), convert to new geom column (multi-polygon). We also identify primary columns by comparing the total rows to the total number of unique values that each column holds. If it’s equal, then it’s the primary column.
+
+| :-------------------------------------: | :-------------------------------------: | 
 |income | Replace NaN (“np”) in numerical columns with 0. Because NaN income has same meaning as $0. After that, we convert all these columns to type int64. |
 
 > polling 	-Dropped 140 rows that has NaN in both longitude, latitude, the_geom
