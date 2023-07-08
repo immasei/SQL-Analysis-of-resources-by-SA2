@@ -1,3 +1,4 @@
+
 # SQL-Project1
 
 ## Introduction
@@ -63,6 +64,7 @@ There are some limitations. We do not know if nan crime data is due to the crime
 **8. Non-employing score** : is the number of non employing construction industries per 1000 people, to be more specific is the number of industries which didn’t hire employees. To calculate score, we join employees with sa2 by sa2 code. There are limitations, the nan exists, and  the score is per 1000 people, but the regions with less than 1000 people exist.
 
 The total score is Sigmoid of total z score. A score can be positive (ie: retail business) or negative (ie: crime rate)
+
 **Sc = Sigmoid(Zretail + Zhealth + Zstops + Zpolls + Zschools + Ztoilet – Zcrime – Zemployee)**
 
 The Sigmoid function converts the summary (+ if the score has a positive impact on well_resourced, - if not such as crime) of the z score to a probability value between 0 to 1, which represents the degree of the well-resourced score. Based on the plot and quantile, we can see areas with high well_resourced scores are concentrated in the city of Sydney. (an interactive version of map is under the same directory)
