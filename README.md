@@ -10,14 +10,14 @@ Using 350+ SA2s within Greater Sydney area, we will spatially intergrating sever
 | Dataset   | Type  | Source                          	      | About    				                        |
 | :-------- | :---: | :-------------------------------------- | :-------------------------------------- | 
 | income    | csv   | [Australia Bureau of Statistics](https://www.abs.gov.au/statistics/labour/earnings-and-working-conditions/personal-income-australia/latest-release#data-downloads)  	      | personal income 			|
-| polling   | csv   | Australian Electoral Commission         | federal election polling locations	|
-| business  | csv   | Australia Bureau of Statistics          | turnover size				|
-| stops     | txt   | Transport for NSW                       | public transport stops			|
-| catchment | shp   | NSW Department of Education             | school					|
-| sa2       | shp   | Australia Bureau of Statistics          | statistical area level 2		|
-| toilet    | json  | Department of Health                    | public toilet				|
-| crime     | shp   | Bureau of Crime Statistics and Research | domestic assault			|
-| employees | csv   | Australia Bureau of Statistics          | employee size 				|
+| polling   | csv   | [Australian Electoral Commission](https://data.aurin.org.au/dataset/au-govt-aec-aec-federal-election-polling-places-2019-na)         | federal election polling locations	|
+| business  | csv   | [Australia Bureau of Statistics](https://www.abs.gov.au/statistics/economy/business-indicators/counts-australian-businesses-including-entries-and-exits/latest-release#data-downloads)          | turnover size				|
+| stops     | txt   | [Transport for NSW](https://opendata.transport.nsw.gov.au/dataset/timetables-complete-gtfs)                       | public transport stops			|
+| catchment | shp   | [NSW Department of Education](https://data.cese.nsw.gov.au/data/dataset/school-intake-zones-catchment-areas-for-nsw-government-schools)             | school					|
+| sa2       | shp   | [Australia Bureau of Statistics](https://www.abs.gov.au/statistics/standards/australian-statistical-geography-standard-asgs-edition-3/jul2021-jun2026/access-and-downloads/digital-boundary-files)          | statistical area level 2		|
+| toilet    | json  | [Department of Health](https://data.gov.au/data/dataset/national-public-toilet-map/resource/34076296-6692-4e30-b627-67b7c4eb1027)                    | public toilet				|
+| crime     | shp   | [Bureau of Crime Statistics and Research](https://www.bocsar.nsw.gov.au/Pages/bocsar_datasets/Spatial.aspx) | domestic assault			|
+| employees | csv   | [Australia Bureau of Statistics](https://www.abs.gov.au/statistics/economy/business-indicators/counts-australian-businesses-including-entries-and-exits/latest-release#data-downloads)          | employee size 				|
 
 ### Cleaning data with Python
 The common process is dealing with NaNs, dropping unnecessary rows, columns, and checking data types. We always drop NaN rows in columns like longitude, latitude or geometry. For data sets with longitude and latitude, create new geom column from that. For spatial data sets with geometry column (polygon), convert to new geom column (multi-polygon). We also identify primary columns by comparing the total rows to the total number of unique values that each column holds. If it’s equal, then it’s the primary column.
