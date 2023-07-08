@@ -39,6 +39,9 @@ The common process is dealing with NaNs, dropping unnecessary rows, columns, and
 ### Indexes
 We create index either on geom or sa2_code.
 
+### Loading data into PostgreSQL via Python 
+(Run the jupyter notebook)
+
 ### Score analysis
 **General formula** : For each score they are divided either by area, or by people. As we only calculate scores for areas with at least 100 total people, these areas and people will be converted to NaN so its final z-score is also NaN. In our pre-check, sa2’s area has no NaN as well as total people and young people. Hence, with a restriction of 100 people, NaN z score should only happen when the region has less than 100 people. As NaN is excluded in calculation of mean and sd, the score won’t be affected. 
 
