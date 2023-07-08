@@ -8,7 +8,7 @@ Using 350+ SA2s within Greater Sydney area, we will spatially intergrating sever
 ### Dataset  
 Dataset   Type  Source                                   About
 
-income    csv   Australia Bureau of Statistics           personal income
+income   || csv   ||Australia Bureau of Statistics  ||         personal income
 
 polling   csv   Australian Electoral Commission          federal election polling locations
 
