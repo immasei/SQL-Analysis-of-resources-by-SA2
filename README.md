@@ -6,9 +6,9 @@ Australia is formally defined by more than 2000 ”Statistical Area Level 2” (
 Using 350+ SA2s within Greater Sydney area, we will spatially intergrating several datasets to calculate wel-resourced score of each region.
 
 ### Dataset  
-Dataset   Type  Source                                   About
+Dataset  || Type  || Source                          ||  About
 
-income   || csv   ||Australia Bureau of Statistics  ||         personal income
+income   || csv   || Australia Bureau of Statistics  ||  personal income
 
 polling   csv   Australian Electoral Commission          federal election polling locations
 
