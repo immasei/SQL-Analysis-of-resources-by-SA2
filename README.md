@@ -7,14 +7,23 @@ Using 350+ SA2s within Greater Sydney area, we will spatially intergrating sever
 
 ### Dataset  
 Dataset   Type  Source                                   About
+
 income    csv   Australia Bureau of Statistics           personal income
+
 polling   csv   Australian Electoral Commission          federal election polling locations
+
 business  csv   Australia Bureau of Statistics           turnover size
+
 stops     txt   Transport for NSW                        public transport stops
+
 catchment shp   NSW Department of Education              school
+
 sa2       shp   Australia Bureau of Statistics           statistical area level 2
+
 toilet    json  Department of Health                     public toilet
+
 crime     shp   Bureau of Crime Statistics and Research  domestic assault
+
 employees csv   Australia Bureau of Statistics           employee size 
 
 ### Cleaning data with Python
