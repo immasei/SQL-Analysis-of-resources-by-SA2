@@ -68,7 +68,7 @@ There are some limitations. We do not know if nan crime data is due to the crime
 
 The total score is Sigmoid of total z score. A score can be positive (ie: retail business) or negative (ie: crime rate)
 
-**Sc = Sigmoid(Zretail + Zhealth + Zstops + Zpolls + Zschools + Ztoilet – Zcrime – Zemployee)**
+**Score = Sigmoid(Zretail + Zhealth + Zstops + Zpolls + Zschools + Ztoilet – Zcrime – Zemployee)**
 
 The Sigmoid function converts the summary (+ if the score has a positive impact on well_resourced, - if not such as crime) of the z score to a probability value between 0 to 1, which represents the degree of the well-resourced score. Based on the plot and quantile, we can see areas with high well_resourced scores are concentrated in the city of Sydney. (an interactive version of map is under the same directory)
 
