@@ -1,5 +1,14 @@
 
-# An analysis of resources by SA2 within Greater Sydney area
+# An analysis of resources by SA2 within Greater Sydney
+
+## Installation
+
+* PostgreSQL
+* PostGIS (via Stack Builder)
+
+## Execute
+
+* Run `main.ipynb` in Jupyter Notebook
 
 ## Introduction
 Australia is formally defined by more than 2000 ”Statistical Area Level 2” (SA2) distinct geographical regions, designed to represent communities of between 3000-25000 people ”that interact together socially and economically”
