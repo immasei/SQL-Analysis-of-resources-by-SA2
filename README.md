@@ -8,6 +8,7 @@
 
 ## Execute
 
+* Fill in your database password in `Credentials.json`
 * Run `main.ipynb` in Jupyter Notebook
 
 ## Introduction
