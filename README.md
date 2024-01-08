@@ -10,6 +10,7 @@
 
 * Fill in your database password in `Credentials.json`
 * Run `main.ipynb` in Jupyter Notebook
+* PDF version of the code is `code_pdf_review.pdf`
 
 ## Introduction
 Australia is formally defined by more than 2000 ”Statistical Area Level 2” (SA2) distinct geographical regions, designed to represent communities of between 3000-25000 people ”that interact together socially and economically”
